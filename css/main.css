@@ -3,8 +3,11 @@ body {
   margin: 0;
   padding: 0; }
 
-.container-fluid #logo {
-  font-size: 2rem; }
+.container-fluid {
+  padding: 0; }
+  .container-fluid #logo {
+    font-size: 2rem;
+    font-family: "Quicksand", sans-serif; }
 
 #notificaciones {
   max-width: fit-content;
@@ -13,7 +16,8 @@ body {
 
 .carousel-item {
   height: 80vh;
-  width: auto; }
+  width: auto;
+  font-family: "Quicksand", sans-serif; }
   .carousel-item img {
     object-fit: cover;
     height: 95vh;
@@ -25,36 +29,65 @@ body {
       color: #fff; }
 
 .card-body p.card-text.d-inline.text-decoration-line-through {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 0.5vh;
   margin-right: 1vw;
-  color: #ff0000; }
+  color: #b5838d;
+  font-family: "Quicksand", sans-serif; }
+
+.card-body .price {
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif; }
 
 div.card.col-lg-3 {
   border-radius: 0%;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
   box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.1); }
 
 .card-img-top {
   height: 70vh;
   width: auto;
   object-fit: cover; }
+  @media screen and (max-width: 992px) {
+    .card-img-top {
+      height: 60vh;
+      width: auto;
+      object-fit: cover; } }
 
 div.card.col-lg-3:hover {
   background-color: #f1f1f1;
   box-shadow: 1.5px 1.5px 1.5px 1px rgba(0, 0, 0, 0.2); }
 
-.col-lg-6 img {
+#categorias .col-lg-6 img {
   margin-top: 10vh;
-  height: 110vh;
+  height: 90vh;
   width: 48vw;
   object-fit: cover; }
 
-.col-lg-6 h1 {
+#categorias .col-lg-6 h1 {
   position: relative;
   bottom: 60vh;
   color: #f1f1f1;
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 48vw;
+  font-family: "Quicksand", sans-serif; }
+
+@media screen and (max-width: 992px) {
+  #categorias .col-12 {
+    padding: 0; }
+    #categorias .col-12 img {
+      margin-top: 10vh;
+      height: 60vh;
+      width: 100vw;
+      object-fit: cover; }
+    #categorias .col-12 h1 {
+      color: #f1f1f1;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: relative;
+      bottom: 40vh;
+      width: 100vw;
+      font-family: "Quicksand", sans-serif; } }
 
 .col-lg-4 img {
   margin-top: 2vh;
@@ -69,7 +102,8 @@ div.card.col-lg-3:hover {
   left: 10vw;
   color: #f1f1f1;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 1vh 2vw; }
+  padding: 1vh 2vw;
+  font-family: "Quicksand", sans-serif; }
 
 .col-lg-4 h1.text-center {
   margin-top: 15vh; }
@@ -88,20 +122,18 @@ div.card.col-lg-3:hover {
     width: 100vw;
     object-fit: cover; } }
 
-.carousel-inner #productos .carousel-item {
-  width: 52vw;
-  height: 100vh; }
-  .carousel-inner #productos .carousel-item img {
-    object-fit: cover;
-    width: 52vw;
-    height: 100vh; }
+#datos_producto {
+  font-family: "Quicksand", sans-serif; }
+  #datos_producto .col-lg-7 .carousel-item {
+    height: 120vh;
+    width: 55vw; }
+    #datos_producto .col-lg-7 .carousel-item img {
+      height: 120vh;
+      width: 55vw;
+      object-fit: cover; }
 
 .row .col-lg-5 {
   margin-top: 10vh; }
-
-.selector {
-  padding: 0.5vh 1vw 0.5vh 1vw;
-  margin-left: 2vw; }
 
 .prod_boxes {
   margin-top: 15vh; }
@@ -113,7 +145,8 @@ div.card.col-lg-3:hover {
 
 #carrito {
   border: solid rgba(0, 0, 0, 0.1) 1px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-family: "Quicksand", sans-serif; }
 
 table {
   display: table;
@@ -123,7 +156,7 @@ table {
   top: 35vh; }
 
 table#talles {
-  font-family: arial, sans-serif;
+  font-family: "Quicksand", sans-serif;
   width: 70%;
   border-collapse: collapse; }
 
@@ -136,7 +169,7 @@ tr td {
   border-collapse: collapse; }
 
 .medirTalla {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Quicksand", sans-serif;
   width: 50vh;
   font-size: 1vw;
   position: relative;
